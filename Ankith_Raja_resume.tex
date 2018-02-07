@@ -1,6 +1,5 @@
 %-------------------------
 % Resume in Latex
-% Author : Sourabh Bajaj
 % License : MIT
 %------------------------
 
@@ -51,7 +50,7 @@
 
 \newcommand{\resumeItemPlain}[2]{
   \item\small{
-    \textbf{#1}{#2 \vspace{-2pt}}
+    \textbf{#1}{ #2 \vspace{-2pt}}
   }
 }
 
@@ -121,16 +120,16 @@
 
     \resumeSubheading
       {Mahindra Comviva Ltd}{Bangalore, India}
-      {Senior Software Engineer}{June 2016 - July 2017}
+      {Senior Software Engineer - Java Backend Developer}{June 2016 - July 2017}
       \resumeItemListStart
-        \resumeItem{Host Card Emulation}
-          {Designed the application architecture for payments using HCE. Worked with senior software architect to complete the design, which focused on providing modularity, security and scalability.}
-        \resumeItemPlain{}
-          {Developed the \textbf{Proof of Concept} to generate and store \textbf{digital receipt} for transactions performed using HCE. Integrated the receipt module with \textbf{Android application} to display the digital receipt. Client: Serco}
-        \resumeItemPlain{}
-          {Obfuscated code using \textbf{DexGuard} command line tool for HCE SDK to \textbf{secure} against reverse engineering of APIs. Worked directly with the DexGuard Software team to achieve 100 percent \textbf{code obfuscation}.}
-        \resumeItemPlain{}
-          {\textbf{Integrated} existing Kotak bank \textbf{KYC verification, NEFT and IMPS payment} services with digital wallet making the services accessible through \textbf{REST APIs}.}  
+        \resumeItemPlain {Contactless Payment}
+          {using Host Card Emulation(HCE). The spring based application design focused on modularity, security and scalability.}
+        \resumeItemPlain{Developed}
+          {the services to create and store digital receipt for transactions performed using HCE. Integrated the receipt services with android application.}
+        \resumeItemPlain{Code Obfuscation}
+          {using DexGuard command line tool to secure HCE SDK against reverse engineering of APIs. Achieved 100 percent code obfuscation.}
+        \resumeItemPlain{Integrated}
+          {Kotak bank secure payment services with wallet application server accessible through REST APIs. }  
       \resumeItemListEnd
       
     \resumeSubheading
