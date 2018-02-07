@@ -1,0 +1,171 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemPlain}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/ankith-rd/}{\Large Ankith Divakar Raja}} & Email : \href{mailto:araja2@ncsu.edu}{araja2@ncsu.edu}\\
+  \href{https://www.linkedin.com/in/ankith-rd/}{https://www.linkedin.com/in/ankith-rd/} & Mobile : 919-946-6195 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {North Carolina State University}{Raleigh, NC}
+      {Master of Science in Computer Networking;  GPA: 3.9 / 4.0}{}
+    \quad \item \textit{\textbf{Relavent Coursework:} Object Oriented Development, Operating System, Algorithms, SDN, Java J2EE, Data Structures, DBMS}  
+      
+    \resumeSubheading
+      {R V College of Engineering}{Bangalore, India}
+      {Bachelor of Engineering in Telecommunication;  GPA: 4.0 / 4.0 }{Sept 2010 -- May 2014}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}
+      {Java, Python, Ruby, C++, MySQL, C}
+    \resumeSubItem{Frameworks}
+      {Spring, Strut2, Hibernate, Ruby on Rails, JDBC }  
+    \resumeSubItem{Platforms}
+      {Windows, Linux, AWS, Heroku, Android }
+    \resumeSubItem{Tools}
+      {Mule ESB, SonarQube, J-Unit, J-Meter, Jenkins, DexGuard, Apache Maven, SVN, Git }
+%    \resumeSubItem{Others}
+%      {Socket Prgramming, TCP/IP, Routing Protocols, Agile Medhodologies}
+  \resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Mahindra Comviva Ltd}{Bangalore, India}
+      {Senior Software Engineer}{June 2016 - July 2017}
+      \resumeItemListStart
+        \resumeItemPlain{}
+          {Designed \textbf{Spring based application} server for contactless payments using \textbf{Host Card Emulation}. The design was focused on providing \textbf{Modularity, Security and Scalability}.}
+        \resumeItemPlain{}
+          {Developed the \textbf{Proof of Concept} to generate and store \textbf{digital receipt} for transactions performed using HCE. Integrated the receipt module with \textbf{Android application} to display the digital receipt. Client: Serco}
+        \resumeItemPlain{}
+          {Obfuscated code using \textbf{DexGuard} command line tool for HCE SDK to \textbf{secure} against reverse engineering of APIs. Worked directly with the DexGuard Software team to achieve 100 percent \textbf{code obfuscation}.}
+        \resumeItemPlain{}
+          {\textbf{Integrated} existing Kotak bank \textbf{KYC verification, NEFT and IMPS payment} services with digital wallet making the services accessible through \textbf{REST APIs}.}  
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Mahindra Comviva Ltd}{Bangalore, India}
+      {Software Engineer}{Sept 2014 - June 2016}
+      \resumeItemListStart
+        \resumeItemPlain{}
+          {Developed \textbf{SOAP/XML APIs} for \textbf{digital wallet application} based on \textbf{Mule ESB} for features like addition, deletion of Card, online payment using bank account/card. Involved extensively working with java frameworks like \textbf{Spring, Struts and Hibernate}.}
+        \resumeItemPlain{}
+          {\textbf{Migrated} digital wallet application APIs developed based on \textbf{SOAP/XML to REST/JSON} using GSON library. Application \textbf{performance improved} by 30 percent.}
+        \resumeItemPlain{}
+          {Worked on \textbf{Proof of Concept} with MTS Russia application team using \textbf{Agile scrum methodology} to develop feature for \textbf{interoperability} of multiple digital wallets using Mule ESB. Developed \textbf{Java REST APIs} to make \textbf{dynamic payments} using multiple wallets.}
+        \resumeItemPlain{}
+          {\textbf{Refactored code} for Mobiquity money banking software using \textbf{SonarQube Code Climate}, reduced the code base by 45 percent and \textbf{application performance increased} by 28 percent.}
+        
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Peer2Peer File Transfer}
+      {Self Synchronized P2P file transfer system with distributed file index was developed using \textbf{Python3} multithreading. Linked List data-structure was used to store peer and file information.}
+    \resumeSubItem{Expertiza(Open Source)}
+      {Contributed to open source Expertiza project by developing a timeline feature to visualize the submissions against due dates and deadlines, for students to keep track of the project progress and deadlines. \textbf{Tools: Ruby on Rails, HTML5, BootStrap, CSS3}}
+    \resumeSubItem{Wireshark(Open Source)}
+      {Working with open source wireshark project team to design a dissector in \textbf{C} to analyze data packets containing Constrained Application Protocol for Patch, iPatch and Fetch methods in RFC 8132.}
+    \resumeSubItem{Point to Multi Point Reliable Transfer}
+      {Virtualized point to point reliable connection to provide point to multipoint reliable connection for simultaneous file transfer to all peers. Developed using \textbf{Python3} multithreading functionality.}
+    \resumeSubItem{Web Application}
+      {Designed and deployed car rental application on \textbf{heroku}, which provided easy booking and checkout functionality in multiple locations. It was designed to provide dynamic pricing based on the time duration. \textbf{Tools: Ruby on Rails, HTML5, BootStrap, CSS3}}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
